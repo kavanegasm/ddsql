@@ -18,6 +18,8 @@ public class Main {
             ddsqlParser parser = new ddsqlParser(tokens);
             ParseTree tree = parser.prog(); // Iniciar el analisis sintáctico en la regla inicial: r
             System.out.println(tree.toStringTree(parser)); // imprime el arbol al estilo LISP
+            //Translate translate = new Translate();
+            //translate.visit(tree);
         } catch (Exception e){
             System.err.println("Error (Test): " + e);
         }
