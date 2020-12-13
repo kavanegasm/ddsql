@@ -1,0 +1,11 @@
+TK_PAR_IZQ=1
+TK_PAR_DER=2
+TK_PUNTO=3
+TK_PUNTOYCOMA=4
+INT=5
+ID=6
+ESP=7
+'('=1
+')'=2
+'.'=3
+';'=4
