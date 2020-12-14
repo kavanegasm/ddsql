@@ -103,6 +103,14 @@ public class ddsqlParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_prog; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).enterProg(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).exitProg(this);
+		}
 	}
 
 	public final ProgContext prog() throws RecognitionException {
@@ -152,6 +160,14 @@ public class ddsqlParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_main_prog; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).enterMain_prog(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).exitMain_prog(this);
+		}
 	}
 
 	public final Main_progContext main_prog() throws RecognitionException {
@@ -211,6 +227,14 @@ public class ddsqlParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_guardar; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).enterGuardar(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).exitGuardar(this);
+		}
 	}
 
 	public final GuardarContext guardar() throws RecognitionException {
@@ -259,6 +283,14 @@ public class ddsqlParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_save; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).enterSave(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).exitSave(this);
+		}
 	}
 
 	public final SaveContext save() throws RecognitionException {
@@ -305,6 +337,14 @@ public class ddsqlParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_var; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).enterVar(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).exitVar(this);
+		}
 	}
 
 	public final VarContext var() throws RecognitionException {
@@ -348,6 +388,14 @@ public class ddsqlParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expression; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).enterExpression(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).exitExpression(this);
+		}
 	}
 
 	public final ExpressionContext expression() throws RecognitionException {
@@ -408,6 +456,14 @@ public class ddsqlParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_attribute; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).enterAttribute(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).exitAttribute(this);
+		}
 	}
 
 	public final AttributeContext attribute() throws RecognitionException {
@@ -440,6 +496,14 @@ public class ddsqlParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_factor; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).enterFactor(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).exitFactor(this);
+		}
 	}
 
 	public final FactorContext factor() throws RecognitionException {
@@ -486,6 +550,14 @@ public class ddsqlParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_num; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).enterNum(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ddsqlListener ) ((ddsqlListener)listener).exitNum(this);
+		}
 	}
 
 	public final NumContext num() throws RecognitionException {

@@ -1,5 +1,6 @@
 grammar ddsql;
 
+
 prog: main_prog+;
 
 main_prog  : (ID TK_PUNTOYCOMA| guardar TK_PUNTOYCOMA| save TK_PUNTOYCOMA);

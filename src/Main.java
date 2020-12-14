@@ -17,9 +17,9 @@ public class Main {
             // Crear el objeto correspondiente al analizador sintáctico que se alimenta a partir del buffer de tokens
             ddsqlParser parser = new ddsqlParser(tokens);
             ParseTree tree = parser.prog(); // Iniciar el analisis sintáctico en la regla inicial: r
-            System.out.println(tree.toStringTree(parser)); // imprime el arbol al estilo LISP
-            //Translate translate = new Translate();
-            //translate.visit(tree);
+            //System.out.println(tree.toStringTree(parser)); // imprime el arbol al estilo LISP
+            ParseTreeWalker walker = new ParseTreeWalker();
+            walker.walk(new Translate(),tree);
         } catch (Exception e){
             System.err.println("Error (Test): " + e);
         }
